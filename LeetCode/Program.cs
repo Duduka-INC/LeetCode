@@ -23,7 +23,14 @@ using LeetCode.Problems;
 // threadB.Start();
 // threadC.Start();
 
-var fooBar = new FooBar(3);
+// var fooBar = new FooBar(3);
+//
+// new Thread(() => fooBar.Foo(() => Console.Write("foo"))).Start();
+// new Thread(() => fooBar.Bar(() => Console.Write("bar"))).Start();
 
-new Thread(() => fooBar.Foo(() => Console.Write("foo"))).Start();
-new Thread(() => fooBar.Bar(() => Console.Write("bar"))).Start();
+
+var zeroEvenOdd = new ZeroEvenOdd(16);
+
+new Thread(() => zeroEvenOdd.Zero((n) => Console.Write(n))).Start();
+new Thread(() => zeroEvenOdd.Even((n) => Console.Write(n))).Start();
+new Thread(() => zeroEvenOdd.Odd((n) => Console.Write(n))).Start();
