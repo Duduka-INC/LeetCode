@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace LeetCode.Problems;
 
 public class ListNode {
@@ -108,4 +110,39 @@ public class AddTwoNumbers
 
         return result;
     }
+    
+
+    void Traverse(ListNode node, List<int> acc)
+    {
+        if (node == null)
+        {
+            return;
+        }
+        acc.Add(node.val);
+        Traverse(node.next, acc);
+    } 
+
+    void TraverseReverse(ListNode node, List<int> acc)
+    {
+        if (node == null)
+        {
+            return;
+        }
+    
+        TraverseReverse(node.next, acc);
+        acc.Add(node.val);
+    } 
+
+    List<int> TraverseReversePure(ListNode node)
+    {
+        if (node == null)
+        {
+            return new List<int>();
+        }
+    
+        var result = TraverseReversePure(node.next);
+        result.Add(node.val);
+    
+        return result;
+    } 
 }

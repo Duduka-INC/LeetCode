@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace LeetCode.Problems;
 
 public class TwoSum
