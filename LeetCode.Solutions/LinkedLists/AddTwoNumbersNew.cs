@@ -1,4 +1,4 @@
-namespace LeetCode.Problems;
+namespace LeetCode.LinkedLists;
 
 public class AddTwoNumbersNew
 {

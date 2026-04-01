@@ -1,8 +1,8 @@
 using System.Text;
-using LeetCode.Problems;
+using LeetCode.Concurrency;
 using Xunit;
 
-namespace LeetCode.Tests;
+namespace Tests.Concurrency;
 
 public class PrintInOrderTests
 {

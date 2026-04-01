@@ -1,6 +1,4 @@
-using System.Collections.Generic;
-
-namespace LeetCode.Problems;
+namespace LeetCode.LinkedLists;
 
 public class ListNode {
     public int val;

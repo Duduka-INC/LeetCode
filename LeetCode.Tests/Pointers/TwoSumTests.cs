@@ -1,8 +1,8 @@
 using System.Collections.Generic;
-using LeetCode.Problems;
+using LeetCode.Pointers;
 using Xunit;
 
-namespace LeetCode.Tests;
+namespace Tests.Pointers;
 
 public class TwoSumTests
 {

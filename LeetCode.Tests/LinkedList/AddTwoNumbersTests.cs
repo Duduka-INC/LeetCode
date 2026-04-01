@@ -1,8 +1,7 @@
-using System.Collections.Generic;
-using LeetCode.Problems;
+using LeetCode.LinkedLists;
 using Xunit;
 
-namespace LeetCode.Tests;
+namespace Tests.LinkedList;
 
 public class AddTwoNumbersTests
 {

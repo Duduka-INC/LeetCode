@@ -1,4 +1,4 @@
-namespace LeetCode.Problems;
+namespace LeetCode.Concurrency;
 
 public class ZeroEvenOdd {
     private int n;

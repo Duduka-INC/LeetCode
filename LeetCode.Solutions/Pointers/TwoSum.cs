@@ -1,6 +1,4 @@
-using System.Collections.Generic;
-
-namespace LeetCode.Problems;
+namespace LeetCode.Pointers;
 
 public class TwoSum
 {
@@ -18,6 +16,7 @@ public class TwoSum
 
             dict[nums[i]] = i;
         }
+        
         return nums;
     }
 }
