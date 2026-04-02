@@ -1,86 +1,28 @@
-﻿using LeetCode.Pointers;
+﻿using LeetCode.BinarySearch;
+using LeetCode.HashTables;
+using LeetCode.Pointers;
+using LeetCode.SlidingWindows;
 
-
-// var foo = new PrintInOrder();
-// var threadA = new Thread(() =>
-// {
-//     foo.Second(() => Console.Write("second"));
-// });
+// var num1 = new int[] { 1, 2, 3, 0, 0, 0 };
+// var num2 = new int[] { 2, 5, 6 };
+// var m = 3;
+// var n = 3;
 //
-// var threadB = new Thread(() =>
-// {
-//     foo.First(() => Console.Write("first"));
-// });
+// var solution = new MergeSortedArray();
 //
-// var threadC = new Thread(() =>
-// {
-//     foo.Third(() => Console.Write("third"));
-// });
-//
-// threadA.Start();
-// threadB.Start();
-// threadC.Start();
-
-// var fooBar = new FooBar(3);
-//
-// new Thread(() => fooBar.Foo(() => Console.Write("foo"))).Start();
-// new Thread(() => fooBar.Bar(() => Console.Write("bar"))).Start();
+// var result = solution.SolveMyOwn(num1, m, num2, n);
 
 
-// var zeroEvenOdd = new ZeroEvenOdd(16);
+// var nums = new int[] { 7, 7 };
+// var target = 1;
 //
-// new Thread(() => zeroEvenOdd.Zero((n) => Console.Write(n))).Start();
-// new Thread(() => zeroEvenOdd.Even((n) => Console.Write(n))).Start();
-// new Thread(() => zeroEvenOdd.Odd((n) => Console.Write(n))).Start();
+// var solution = new TopKFrequentElements();
+// var result = solution.Solve(nums, target);
 
+var s = "pwwkew";
 
-// var buildingH2O = new H2O();
-//
-// var water = "HHHHHHHHHHOHHOHHHHOOHHHOOOOHHOOHOHHHHHOOHOHHHOOOOOOHHHHHHHHH";
-// var result = new StringBuilder();
-// var threads = new List<Thread>();
-//
-// void DoAction(char c)
-// {
-//     result.Append(c);
-// }
-//
-// foreach (char c in water)
-// {
-//     if (c is 'H')
-//     {
-//         var t = new Thread(() => buildingH2O.Hydrogen(() => DoAction(c)));
-//         threads.Add(t);
-//         t.Start();
-//     }
-//     else
-//     {
-//         var t = new Thread(() => buildingH2O.Oxygen(() => DoAction(c)));
-//         threads.Add(t);
-//         t.Start();
-//     }
-// }
-//
-// foreach (var thread in threads)
-// {
-//     thread.Join();
-// }
-//
-// if (result.Length != water.Length)
-// {
-//     Console.WriteLine($"Wrong: \n{water}\n{result}");
-// }
-// else
-// {
-//     Console.WriteLine($"Correct: \n{water}\n{result}");
-// }
+var solution = new LongestSubstringWithoutRepeatingCharacters();
 
-var arr1 = new int[] {0, 2, 3, 3, 3, 3, 3, 4, 4, 55};
-var arr2 = new int[] {1, 1, 3, 3, 3, 4};
-var arr3 = new int[] {0, 2, 2, 2, 4};
+var result = solution.SolveMyOwn(s);
 
-var test = new SameNumber();
-
-int res = test.Solve(arr1, arr2, arr3);
-
-Console.WriteLine(res);
+Console.WriteLine(result);

@@ -30,4 +30,36 @@ public class LongestSubstringWithoutRepeatingCharacters
         
         return result;
     }
+    
+    public int SolveMyOwn(string s)
+    {
+        var left = 0;
+        var result = 0;
+
+        var count = new Dictionary<char, int>();
+        
+        for (int right = 0; right < s.Length; right++)
+        {
+            var ch =  s[right];
+
+            if (count.ContainsKey(ch))
+            {
+                while (count.ContainsKey(ch) &&  count[ch] >= left)
+                {
+                    left++;
+                }
+            }
+            else
+            {
+                count[ch] = right;
+                var sum = right - left;
+                if (sum > result)
+                {
+                    result = sum;
+                }
+            }
+        }
+        
+        return result;
+    }
 }
