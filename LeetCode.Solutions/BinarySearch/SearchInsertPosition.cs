@@ -9,7 +9,7 @@ public class SearchInsertPosition
 
         var idx = 0;
         
-        while (min <= max)
+        while (min < max) 
         {
             idx = CalcBinaryPointer(min, max);
 
